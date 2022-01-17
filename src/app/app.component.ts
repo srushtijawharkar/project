@@ -71,7 +71,20 @@ removetask(id:number)
   console.warn(id);
 }
 
+main_title = "pass Data  main/parent compoment to child"
+data = 10;
+updatedata()
+{
+  this.data= Math.floor(Math.random()*10);
 
+}
+child_title = "pass Data  child compoment to parent component";
+data1 = "x";
+userupdate(item2:string)
+{
+  console.warn(item2);
+  this.data1=item2;
 
+}
 }
 
