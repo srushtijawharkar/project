@@ -1,0 +1,44 @@
+<h1>bootstrap added</h1>
+<div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
+  <h1>{{title_name_todo}}</h1>  
+  <input type="text" placeholder="Enter Task" #task /> <br><br>
+  <button (click)="add_task(task.value)">Click Me</button><br><br>
+  <ul *ngFor = "let item1 of list">
+      <li>{{item1.name1}}<button (click) ="removetask(item1.id)">Remove task</button></li>
+  </ul>
+Hi Angular {{header}}
+<h1>{{getarea()}}</h1>
+{{num ==100}}
+<app-header></app-header>
+<app-sign-in></app-sign-in>
+<button (click)="getName('Srushti')">Click Me</button><br><br>
+<input type="text" placeholder="name" #name (keyup)="getuname(name.value)" name="username" />
+<h1> value is {{dispvalue}}</h1>
+<button (click)="getuname(name.value)">Click Me</button><br><br>
+<h1>Counter code</h1>
+<button (click)="counter('add')">counter ++</button>
+<h3 class = "heading">counter {{count}}</h3>
+<button (click)="counter('minus')">counter --</button><br><br>
+
+
+<h1 [style.color]= "color">{{titlenm}}</h1>
+<button (click)="colorchange()">CLick to change color</button>
+
+<!--<h1>{{title_form}}</h1>
+<form #basicForm = "ngForm" (submit)="getuserdata(basicForm.value)">
+<input type="text" placeholder="name" ngModel name="username" /><br /><br />
+<input type="text" placeholder="email" ngModel name="email" /><br /><br />
+<input type="text" placeholder="password" ngModel name="password" /><br /><br />
+<button>Register</button>
+<ul>
+    <li>{{userdata.username}} </li>
+        <li>{{userdata.email}} </li>
+        <li>{{userdata.password}} </li>
+    </ul>
+</form>--->
+
+   
+   
+     
